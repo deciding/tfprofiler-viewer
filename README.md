@@ -13,7 +13,6 @@ profile_op_builder.select(['micros', 'occurrence'])
 profile_op_builder.order_by('micros')
 profile_op_builder.with_max_depth(20) # can be any large number
 my_profiler.profile_name_scope(profile_op_builder.build())
-my_profiler.profile_name_scope(profile_op_builder.build())
 ```
 
 ## How to use
