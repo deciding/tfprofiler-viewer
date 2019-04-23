@@ -16,5 +16,5 @@ my_profiler.profile_name_scope(profile_op_builder.build())
 my_profiler.profile_name_scope(profile_op_builder.build())
 ```
 
-##How to use
+## How to use
 `./tf_profiler_scope_viewer.sh {the output file from above scope view}`
