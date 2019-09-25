@@ -9,6 +9,7 @@ run_options = tf.RunOptions(trace_level=tf.RunOptions.FULL_TRACE)
 run_metadata = tf.RunMetadata()
 
 sess.run(outputs, options=run_options, run_metadata=run_metadata)
+my_profiler.add_step(step=i, run_meta=run_metadata)
 
 profile_op_builder = option_builder.ProfileOptionBuilder( )
 # sort by time taken
