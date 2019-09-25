@@ -3,6 +3,7 @@
 only tested on the following settings for scope view
 
 ```python
+from tensorflow.python.profiler import model_analyzer
 my_profiler = model_analyzer.Profiler(graph=self.session.graph)
 options = tf.RunOptions(trace_level=tf.RunOptions.FULL_TRACE)
 run_metadata = tf.RunMetadata()
